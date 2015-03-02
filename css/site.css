@@ -1,35 +1,41 @@
 body {
-  color: #333;
+  color: #5f5f5f;
   font-family: 'Open Sans Condensed', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'PT Sans', sans-serif;
 }
 
+header {
+    font-family: 'Merriweather', serif;
+    border-bottom: 1px solid #ddd;
+    color: #E4844A;
+    padding-top: 6px;
+    height: 30px;
+}
+
 .container {
-  margin: 0 auto;
-  width: 960px;
+    margin: 0 auto;
+    width: 960px;
 }
 
 .centered {
-  text-align: center;
+    text-align: center;
 }
 
 .lighten {
-  color: #6F6F6F;
-}
-
-.fingerprint {
-  font-family: 'Open Sans', sans-serif;
+    color: #6F6F6F;
 }
 
 a:hover, a:focus {
-  color: #0079A1;
+    color: #E4844A;
 }
 
 a {
-  color: #008CBA;
-  text-decoration: none;
-  line-height: inherit;
+    color: #E4844A;
+    text-decoration: none;
+    line-height: inherit;
 }
