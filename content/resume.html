@@ -1,19 +1,4 @@
-<html>
-    <head>
-        <title>Kyle Terry: Resume</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <style>
-            .affix {
-                top: 40;
-            }
-        </style>
-    </head>
-    <body>
+{{ define "content" }}
         <div class="container">
             <div class="row">
                 <div class="span3">
@@ -36,8 +21,11 @@
                         <div class="page-header">
                             <h2>Experience</h2>
                         </div>
+                        <h3>Evident.io <small>Lead Data Science Engineer</small></h3>
+                        <p><em>Remote Position &middot; Mar 2015 - Present</em></p>
+                        <p>Leading the engineering and research efforts for the Data Science team. Taking large amounts of data and performing analytics with MapReduce tools on AWS.</p>
                         <h3>Evident.io <small>Full Stack Engineer</small></h3>
-                        <p><em>Remote Position &middot; Dec 2014 - Present</em></p>
+                        <p><em>Remote Position &middot; Dec 2014 - Mar 2015</em></p>
                         <p>Programming and engineering a customer facing web application for managing AWS security monitoring.</p>
                         <h3>Copious, Inc <small>Senior Systems Engineer</small></h3>
                         <p><em>Portland, OR &middot; May 2013 - Dec 2014</em></p>
@@ -164,5 +152,6 @@
                 </div>
             </div>
         </div>
-    </body>
-</html>
+        {{end}}
+
+        {{define "site-title" }}{{.SiteTitle}}: Resume{{end}}
