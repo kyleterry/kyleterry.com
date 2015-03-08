@@ -1,6 +1,6 @@
 ###
-title: Solarwind The bullshit-free static site generator
-date: 03 Mar 15 18:25 PDT
+title: Solarwind: The bullshit-free static site generator
+date: 07 Mar 15 18:25 PST
 category: projects
 ###
 
