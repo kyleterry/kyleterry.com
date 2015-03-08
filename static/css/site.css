@@ -30,6 +30,20 @@ header {
     color: #6F6F6F;
 }
 
+.post-body p {
+    text-justify: inter-word;
+}
+
+.post-body {
+    text-align: left;
+}
+
+ul#post-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 a:hover, a:focus {
     color: #E4844A;
 }
