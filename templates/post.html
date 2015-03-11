@@ -1,5 +1,6 @@
 {{define "body"}}
-<h2>{{ .CurrentPage.Title }} <small>{{ .CurrentPage.Date }}</small></h2>
+<h2>{{ .CurrentPage.Title }}</h2>
+<p><strong>{{ .CurrentPage.FormattedDate }}</strong></p>
 <div class="post-body">
 {{ .CurrentPage.FinalHTML }}
 </div>
