@@ -16,8 +16,33 @@ header {
     border-bottom: 1px solid #ddd;
     color: #E4844A;
     padding-top: 6px;
-    height: 30px;
+    height: 40px;
     background-color: #3E4147;
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    height: 50px;
+}
+
+.nav > li {
+    position: relative;
+    display: inline;
+    line-height: 30px;
+}
+
+.header-inner > .avatar {
+    float: left;
+    margin: 0 10px;
+}
+
+.avatar > img {
+    height: 35px;
+    width: 35px;
+    border-radius: 3px;
 }
 
 code {
@@ -29,7 +54,7 @@ code {
 
 .container {
     margin: 0 auto;
-    width: 960px;
+    width: 760px;
 }
 
 .centered {
