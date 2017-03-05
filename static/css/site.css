@@ -20,6 +20,13 @@ header {
     background-color: #3E4147;
 }
 
+code {
+    background-color: #3E4147;
+    padding: 4px;
+    color: #DFBA69;
+    border-radius: 3px;
+}
+
 .container {
     margin: 0 auto;
     width: 960px;
