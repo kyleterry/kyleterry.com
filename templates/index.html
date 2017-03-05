@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>{{ template "site-title" .}}</title>
+    <meta charset="utf-8">
+    <meta name="description" content="{{ .SiteDescription }}">
     <link href='//fonts.googleapis.com/css?family=Droid+Serif|Open+Sans+Condensed:300|PT+Sans|Open+Sans' rel='stylesheet' type='text/css'>
     <link href="/static/css/site.css" rel="stylesheet" type="text/css">
-    <meta name="description" content="{{ .SiteDescription }}">
   </head>
   <body>
     <div class="inner-content centered">
@@ -13,8 +14,9 @@
             <div class="header-inner">
               <a href="/" class="avatar"><img src="/static/images/avatar.png"></a>
               <ul class="nav">
-                <li class="nav-item"><a href="/resume.html">Resume</a>  &middot;</li>
                 <li class="nav-item"><a href="/projects.html">Projects</a>  &middot;</li>
+                <li class="nav-item"><a href="/climbing.html">Climbing Data</a>  &middot;</li>
+                <li class="nav-item"><a href="/resume.html">Resume</a>  &middot;</li>
                 <li class="nav-item"><a href="https://github.com/kyleterry">Github</a>  &middot;</li>
                 <li class="nav-item"><a href="/"0x3BA4034B.pub.asc>0x3BA4034B</a></li>
               </ul>

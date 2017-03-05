@@ -18,4 +18,9 @@ In addition to fixing the connection issues, I decided to rip out the old
 logging system as well and replace it with something more organized
 so easily spot things that could have lead to a failure.
 
-There's a new docker image up with the fixes at `kyleterry/tenyks:0.10.0`.
+There's a new docker image up with the fixes at `kyleterry/tenyks:0.10.0`. You
+can pull this down and wrap the image in your own docker file to copy your
+config in. Consul, etcd, and redis support are coming soon so you can pull
+config from an environment var.
+
+`docker pull kyleterry/tenyks:latest`
