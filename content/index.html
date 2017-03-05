@@ -1,17 +1,17 @@
 {{define "content"}}
 <p>You can find me on IRC. I frequent freenode and will always be in #infoforcefeed.</p>
-<p>Now Ebola free.</p>
-<p>BTC: 1KBNXvahSQHskxy8RmFtggc4VippXtoAZL</p>
 <p>Https fingerprints can be found at the following locations:</p>
 <p>
   <a href="https://github.com/kyleterry/kyleterry.com-https-cert-fingerprint/blob/master/README.md">Github - both SHA1 and MD5</a><br>
   <a href="https://twitter.com/s0paranoid/status/531349353328152576">Twitter - SHA1</a><br>
   <a href="https://twitter.com/s0paranoid/status/531350633408765952">Twitter - MD5</a>
 </p>
-<p>These are words...</p>
-<ul id="post-list">{{ range $post := .Posts }}
-  <li><a href="{{ $post.RelLink }}">{{ $post.Title }}</a></li>
-{{ end }}</ul>
-{{ end }}
 
+<h2>Here are some posts:</h2>
+<ul id="post-list">
+  {{ range $post := .Posts }}
+  <li>{{ $post.FormattedDate }} - <a href="{{ $post.RelLink }}">{{ $post.Title }}</a></li>
+  {{ end }}
+</ul>
+{{ end }}
 {{ define "site-title" }}{{ .SiteTitle }}: It's fucking Earth shaking{{end}}
