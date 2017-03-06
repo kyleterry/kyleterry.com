@@ -6,6 +6,7 @@
     <meta name="description" content="{{ .SiteDescription }}">
     <link href='//fonts.googleapis.com/css?family=Droid+Serif|Open+Sans+Condensed:300|PT+Sans|Open+Sans' rel='stylesheet' type='text/css'>
     <link href="/static/css/site.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="inner-content centered">
@@ -14,25 +15,28 @@
             <div class="header-inner">
               <a href="/" class="avatar"><img src="/static/images/avatar.png"></a>
               <ul class="nav">
-                <li class="nav-item"><a href="/projects.html">Projects</a>  &middot;</li>
-                <li class="nav-item"><a href="/climbing.html">Climbing Data</a>  &middot;</li>
-                <li class="nav-item"><a href="/resume.html">Resume</a>  &middot;</li>
-                <li class="nav-item"><a href="https://github.com/kyleterry">Github</a>  &middot;</li>
-                <li class="nav-item"><a href="/"0x3BA4034B.pub.asc>0x3BA4034B</a></li>
+                <li class="nav-item"><a href="/projects.html">Projects</a></li>
+                <li class="nav-item"><a href="/climbing.html">Data</a></li>
+                <li class="nav-item"><a href="/resume.html">Resume</a></li>
+                <li class="nav-item"><a href="http://sufr.kyleterry.com">Bookmarks</a></li>
+                <li class="nav-item"><a href="https://github.com/kyleterry"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li class="nav-item"><a href="https://instagram.com/crashxoverride"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
               </ul>
             </div>
           </div>
       </header>
     </div>
-    <div class="container">
+    <div class="container main-content">
       <div class="inner-content">
         {{template "body" .}}
-        <div class="infobox centered">
-          <p>
-            &copy; Kyle Terry &middot; <a href="https://creativecommons.org/licenses/by/3.0/us/">Everything is Creative Commons Attribution 3.0</a>
-          </p>
-        </div>
       </div>
     </div>
+    <footer>
+      <div class="infobox centered">
+        <p>
+          &copy; Kyle Terry &middot; <a href="https://creativecommons.org/licenses/by/3.0/us/">Everything is Creative Commons Attribution 3.0</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
