@@ -1,12 +1,20 @@
-all: setup build docker-build
+GO        ?= go
+DOCKER    ?= docker
+RELEASE   ?= kyleterry/kyleterry.com:latest
 
-setup:
-	go get github.com/kyleterry/solarwind
+all: build
 
-build: setup
-	solarwind generate
+build:
+	$(DOCKER) build -t $(RELEASE) .
 
-docker-build: build
-	docker build -t kyleterry/kyleterry.com .
+run:
+	$(eval container_id := $(shell $(DOCKER) run -it --rm -P -d $(RELEASE)))
+	$(eval bound_to := $(shell docker port $(container_id) 80))
+	@echo http://$(value bound_to)
+	@$(DOCKER) attach $(container_id)
 
-.PHONY: all setup build docker-build
+release:
+	@echo $(DOCKER_PASSWORD) | $(DOCKER) login -u $(DOCKER_USERNAME) --password-stdin
+	$(DOCKER) push $(RELEASE) 
+
+.PHONY: all build release clean
