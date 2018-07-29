@@ -1,8 +1,9 @@
 body {
-    color: #2A2C31;
-    /*font-family: 'Open Sans Condensed', sans-serif;*/
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    color: #E4844A;
+    background-color: #3E4147;
+    font-family: Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+    line-height: 1.4rem;
+    font-size: 14px;
     padding: 0;
     margin: 0;
     min-height: 100%;
@@ -17,11 +18,11 @@ h1, h2, h3, h4, h5 {
 
 header {
     font-family: 'Open Sans', sans-serif;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
     color: #E4844A;
+    background-color: #3E4147;
     padding-top: 6px;
     height: 40px;
-    background-color: #3E4147;
 }
 
 .nav {
@@ -101,11 +102,13 @@ ul#post-list {
 }
 
 a:hover, a:focus {
-    color: #E4844A;
+    /* color: #E4844A; */
+    color: #844ae4;
 }
 
 a {
-    color: #E4844A;
+    /* color: #E4844A; */
+    color: #844ae4;
     text-decoration: none;
     line-height: inherit;
 }
